@@ -6,7 +6,7 @@
 
     <groupId>com.sankuai.groupmeal</groupId>
     <artifactId>groupmeal-java-sdk</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <name>groupmeal-java-sdk</name>
     <description>The AIP SDK for Java provides Java APIs for all of AI APIs.</description>
     <url>https://eps.meituan.com/open/2_channel/sdk/</url>
