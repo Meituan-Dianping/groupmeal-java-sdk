@@ -74,5 +74,5 @@ switch (result.code()) {
 
 ## 详细使用文档
 
-参考[美团企业用餐开放平台](https://eps.meituan.com/open/2_channel/sdk)
+参考[美团企业用餐开放平台](https://eps.meituan.com/open/)
 
