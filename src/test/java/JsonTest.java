@@ -1,7 +1,8 @@
 import com.sankuai.groupmeal.base.util.JsonUtil;
 import com.sankuai.groupmeal.business.pay.PayCallbackParam;
-import org.junit.Assert;
 import org.junit.Test;
+import org.skyscreamer.jsonassert.JSONAssert;
+import org.json.JSONException;
 
 /**
  * @author zhengxiaoluo
@@ -26,6 +27,10 @@ public class JsonTest {
         PayCallbackParam param1 = JsonUtil.decode2Camel(json, PayCallbackParam.class);
         String json1 = JsonUtil.encode2UnderScore(param1);
         System.out.println(json1);
-        Assert.assertTrue(json.equals(json1));
+        try {
+            JSONAssert.assertEquals(json, json1, false);
+        } catch (JSONException e) {
+            throw new IllegalArgumentException(e.getMessage());
+        }
     }
 }
